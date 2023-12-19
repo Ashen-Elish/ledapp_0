@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Логотип УрФУ -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="450dp"
+        android:layout_height="490dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-1dp"
+        android:alpha="0.30"
+        android:background="@drawable/logo_2"
+        android:scaleType="fitStart"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <!-- Выравнивание кнопок -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="MainActivity">
+
+        <!-- "Главная" -->
+        <ImageButton
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/home_image_view"
+            android:onClick="goToDrawPage"
+            android:scaleType="fitCenter" />
+
+        <!-- Изображение -->
+        <ImageButton
+            android:id="@+id/image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawning"
+            android:layout_alignEnd="@+id/drawning"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@drawable/image_button"
+            android:scaleType="fitCenter" />
+
+        <!-- Светомузыка -->
+        <ImageButton
+            android:id="@+id/light_music_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawning"
+            android:layout_alignStart="@+id/drawning"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/light_music_button"
+            android:scaleType="fitCenter" />
+
+        <!-- Рисование -->
+        <ImageButton
+            android:id="@+id/drawning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/drawning"
+            android:onClick="goToDrawPage"
+            android:scaleType="fitCenter" />
+
+        <!-- Анимация -->
+        <ImageButton
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawning"
+            android:layout_alignStart="@+id/drawning"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/animation_button"
+            android:scaleType="fitCenter" />
+
+        <!-- Дата и время -->
+        <ImageButton
+            android:id="@+id/data_and_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawning"
+            android:layout_alignEnd="@+id/drawning"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@drawable/data_and_time_button"
+            android:scaleType="fitCenter" />
+
+        <!-- Блютуз -->
+        <ImageButton
+            android:id="@+id/icon_bluetooth_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/button_bluetooth_selector"
+            android:scaleType="fitCenter" />
+
+        <!-- Домой -->
+        <ImageButton
+            android:id="@+id/icon_home_button_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/icon_home_button_activity"
+            android:scaleType="fitCenter" />
+
+        <!-- Камера -->
+        <ImageButton
+            android:id="@+id/icon_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/button_camera_selector"
+            android:onClick="goToCameraPage"
+            android:scaleType="fitCenter" />
+
+        <!-- Яркость -->
+        <ImageView
+            android:id="@+id/brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/light_music_button"
+            android:layout_alignStart="@+id/light_music_button"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/brightness"
+            android:scaleType="fitCenter" />
+
+        <!-- Значок яркости -->
+        <ImageView
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brightness"
+            android:layout_alignStart="@+id/brightness"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light"
+            android:scaleType="fitCenter" />
+
+        <!-- ползунок -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/light"
+            android:layout_alignEnd="@+id/light"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="-290dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/light"
+            android:max="255"
+            android:progress="128"
+            android:progressTint="@android:color/holo_blue_dark"
+            android:thumbTint="@android:color/holo_blue_dark" />
+
+
+    </RelativeLayout>
+</FrameLayout>
